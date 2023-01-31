@@ -4,32 +4,32 @@ ChooseCar();
 
 void ChooseCar()
 {
-    // skapa string som heter "car", med 3 element 
+    // creates a string called "car", with 3 elements
     List<string> car = new List<string>();
     car.Add("Black");
     car.Add("White");
     car.Add("Grey");
-    // foreach är en loop som körs och skriver elementen till consolen
+    // foreach is a loop that runs and writes the elements to the console
     foreach (string cars in car)
     {
         Console.WriteLine(cars);
     }
 
-    // välkommnar spelaren och ber spelare välja bil
+    // welcomes player and asks them to choose car
     string blackCar = "One";
     Console.WriteLine("Welcome which of your 3 cars would you like to use today, 1, 2 or 3");
     // varar spelares svar
     string carName = "";
     int cNum = 0;
-    // kör loop tills spelaren skriver "Quit"
+    // in loop until player types "Quit"
     while (carName != "Quit")
     {
         //läser användares svar
         carName = Console.ReadLine();
         bool whip = int.TryParse(carName, out cNum);
-        // gör om till int och förvarar i "cNum"
+        // turns into int and stores in "cNum"
 
-    // Kollar spelarens svar och skriver respoons beroende på vad spelaren skriver
+        // checks what the player writes and gives a response 
         if (cNum == 1)
         {
             Console.WriteLine("You are in the black benz, If you wish to change type Two or Three");
@@ -52,7 +52,9 @@ void ChooseCar()
         }
 
     }
-    // så att spelet inte stängs ner
+
+    cw
+    // game doesent shut down after run
     Console.ReadLine();
 
 }
